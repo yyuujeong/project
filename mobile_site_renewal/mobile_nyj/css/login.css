@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap'); /* 로고글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+.f {
+    font-family: 'Lato', sans-serif;
+}
+.f2 {
+    font-family: 'Pretendard-Regular';
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed; top: 0;
+    background: #fefce9;
+    z-index: 10000;
+}
+header h1 {
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+header h1 > a {
+    color: #ca2723;
+    font-family: 'Heebo', sans-serif;
+}
+.icon {
+    position: absolute; right: 0; top: 0;
+    padding: 0 15px;
+}
+.icon li {
+    display: inline-block;
+}
+.ham {
+    position: absolute; left: 0; top: 0;
+    padding: 7px 15px 0;
+}
+.a img {
+    width: 30px;
+}
+.im img {
+    margin-top: 9px;
+    width: 30px;
+}
+.icon_s {
+    position:absolute; top: 60px; right: 65px;
+    cursor: pointer;
+}
+.icon_s img {
+    width: 20px;
+    height: 20px;
+}
+.search_form input {
+    width: 210px;
+    border: none;
+    border-bottom: 3px solid #ca2723;
+    background: none;
+    outline: none;
+    margin: 78px 0 0 30px;
+}
+.menu {
+    z-index: 10000;
+    font-size: 1rem;
+    height: 100%;
+    background: #fff;
+    position: fixed; top: 0;
+    width: 300px;
+    /* left: 0; */
+    left: -300px; /* 일단 보이게 하려면 주석 풀기 */
+}
+.menu > ul {
+    margin: 20px;
+    height: 100%;
+}
+.menu li {
+    text-indent: 10px;
+}
+.menu > ul > li > a {
+    color: #3f3948;
+    font-weight: bold;
+    position: relative;
+}
+.dd {
+    margin: 15px 0 -15px;
+}
+.sub {
+    margin: 5px 0 0 20px;
+    display: none;
+}
+.sub li a {
+    display: block;
+    color: #3f3948;
+}
+.btn {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    position: absolute; right: -39px; top: 20px;
+    /* left: -39px; */
+}
+.cross {
+    width: 40px;
+    height: 40px;
+    background: none;
+    position: absolute; right:0; top:-5px;
+    color:#ca2723;
+    border:0;
+    cursor: pointer;
+    outline:none;
+    z-index:100000;
+    font-size: 4rem;
+}
+
+.arrow {
+    width: 15px;
+    position: absolute; right: 15px; top: 17px;
+}
+/* 헤더, 메뉴 */
+
+.black {
+    color: #3f3948;
+}
+.red {
+    color: #ca2723;
+}
+
+.form {
+    width: 100%;
+    height: 400px;
+}
+.form fieldset {
+    width: 100%;
+    height: 400px;
+    position:relative; top: 100px;
+    text-align: center;
+}
+.form legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+.login input {
+    display: block;
+    width: 250px;
+    height: 30px;
+    padding: 3px 10px;
+    font-size: 0.8rem;
+    position: relative; left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #ca2723;
+    outline: none;
+}
+.login input:last-child {
+    border-top: none;
+}
+.login input::placeholder {
+    color: #ca2723;
+    
+}
+.checkbox {
+    position: relative; left: -90px; top: 5px;
+}
+input[type=checkbox] {
+    cursor: pointer;
+}
+input[type=checkbox] + label {
+    margin-left: -5px;
+    font-size: 0.75rem;
+}
+.button {
+    width: 270px;
+    height: 35px;
+    padding: 3px 10px;
+    font-size: 0.9rem;
+    background: #ca2723;
+    border: none;
+    margin-top: 45px;
+    cursor: pointer;
+}
+.button1 {
+    transition: all 0.4s;
+}
+.button1:hover {
+    background: #fd8583;
+}
+.button a {
+    color: #FEFCE9;
+}
+
+.b_list {
+    text-align: center;
+    margin-top: 5px;
+}
+.b_list li {
+    display: inline-block;
+    font-size: 0.6rem;
+    padding: 0 5px;
+}
+.b_list li a {
+    display: block;
+    color: #3f3948;
+}
+.b_list li a:hover {
+    font-weight: bold;
+}
+
+
+
+
+
+

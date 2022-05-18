@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap'); /* 로고글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+.f {
+    font-family: 'Lato', sans-serif;
+}
+.f2 {
+    font-family: 'Pretendard-Regular';
+}
+.black {
+    color: #3f3948;
+}
+.red {
+    color: #ca2723;
+}
+
+/* header 부분 */
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed; top: 0; left: 0;
+    background: #fefce9;
+    z-index: 10000;
+}
+header h1 {
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+header h1 > a {
+    color: #ca2723;
+    font-family: 'Heebo', sans-serif;
+}
+.icon {
+    position: absolute; right: 0; top: 0;
+    padding: 0 15px;
+}
+.icon li {
+    display: inline-block;
+}
+.ham {
+    position: absolute; left: 0; top: 0;
+    padding: 7px 15px 0;
+}
+.a img {
+    width: 30px;
+}
+.im img {
+    margin-top: 9px;
+    width: 30px;
+}
+.icon_s {
+    position:absolute; top: 60px; right: 65px;
+    cursor: pointer;
+}
+.icon_s img {
+    width: 20px;
+    height: 20px;
+}
+.search_form input {
+    width: 210px;
+    border: none;
+    border-bottom: 3px solid #ca2723;
+    background: none;
+    outline: none;
+    margin: 78px 0 0 30px;
+}
+.menu {
+    z-index: 10000;
+    font-size: 1rem;
+    height: 100%;
+    background: #fff;
+    position: fixed; top: 0;
+    width: 300px;
+    /* left: 0; */
+    left: -300px;
+}
+.menu > ul {
+    margin: 20px;
+    height: 100%;
+}
+.menu li {
+    text-indent: 10px;
+}
+.menu > ul > li > a {
+    color: #3f3948;
+    font-weight: bold;
+    position: relative;
+}
+.dd {
+    margin: 15px 0 -15px;
+}
+.sub {
+    margin: 5px 0 0 20px;
+    display: none;
+}
+.sub li a {
+    display: block;
+    color: #3f3948;
+}
+.btn {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    position: absolute; right: -39px; top: 20px;
+    /*left: -39px;*/
+}
+.cross {
+    width: 40px;
+    height: 40px;
+    background: none;
+    position: absolute; right:0; top:-5px;
+    color:#ca2723;
+    border:0;
+    cursor: pointer;
+    outline:none;
+    z-index:100000;
+    font-size: 4rem;
+}
+.arrow {
+    width: 15px;
+    position: absolute; right: 15px; top: 17px;
+}
+
+/* 메인 슬라이드 부분 */
+#main_slide {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.ms {
+    position: relative; left: 0;
+    width: 400%;
+}
+.ms li {
+    width: 25%;
+    float: left;
+}
+.ms img {
+    width: 100%;
+}
+.book_roll {
+    position: relative; bottom: 45px;
+    text-align: center;
+}
+.book_roll img{
+    width: 10px;
+}
+.book_roll li {
+    display: inline-block;
+}
+
+/* 팝업창 부분  */
+.pop_wrap {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    display: none;
+}
+
+/* 첫 번째 section : #section 부분 */
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 3rem 0;
+    color: #3f3948;
+}
+.line {
+    position: relative;
+    width: 35px;
+    height: 3px;
+    background: #3f3948;
+    margin: -30px auto;
+}
+
+#section {
+    width: 100%;
+    margin-top: -70px;
+}
+#section article {
+    width: 100%;
+}
+#section article ul li {
+    width: 50%;
+    float: left;
+    margin-top: 25px;
+}
+#section article ul li img {
+    width: 100%;
+}
+
+.bg {
+    width: 100%;
+    background: #fefce9;
+    text-align: center;
+}
+.down {
+    padding-top: 50px;
+}
+.bgp {
+    font-size: 0.9rem;
+    height: 110px;
+}
+.wel {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 15px 0 20px;
+}
+.about_img {
+    width: 90%;
+    margin: 50px auto 0;
+}
+.about_img img {
+    width: 100%;
+} 
+.mimg {
+    position: relative; left: 0; top: 60px;
+}
+.mimg li {
+    display: none;
+}
+.mimg a {
+    display: block;
+    font-size: 0.65rem;
+    color: #ca2723; 
+    width: 95%;
+    margin: 0 auto;
+}
+span {
+    display: inline-block;
+    color: #3f3948;
+}
+.span {
+    margin-top: 10px;
+}
+.left {
+    margin-top: 10px;
+} /* 할인제품 */
+.span1 {
+    color: #b5b5b5;
+    margin-right: 8px;
+} /* 할인제품 */
+.left2 {
+    margin-top: 10px;
+} /* 기본제품 */
+
+
+#box ul li {
+    display: none;
+} /* 더보기 숨김 */
+.more {
+    display: block;
+    position: relative; left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    margin: 110px 0 50px;
+    color: #3f3948;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+}
+
+/* 두 번째 section : #section2 부분 */
+#section2 {
+    width: 100%;
+}
+.iimg {
+    position: relative; left: 0; top: 0;
+}
+.iimg a {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font: 0.8rem Lato;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    animation: fade 1s;
+}
+.iimg a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+.iimg img {
+    width: 100%;
+}
+
+.hover13:hover img {
+    opacity: 1;
+    animation: flash 1.5s;
+}
+@keyframes flash {
+    0% {opacity: 0.4;}
+    100% {opacity: 1;}
+}
+
+/* footer 부분 */
+footer {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+footer ul li {
+    display: inline-block;
+}
+.footer li a {
+    display: block;
+    color: #3f3948;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+.footer2 li {
+    display: inline-block;
+    color: #3f3948;
+    font-size: 0.7rem;
+}
+.footer2 li:after {
+    content: "|";
+    padding-left: 5px;
+    color: #3f3948;
+}
+.footer2 li:nth-child(4):after {
+    content: "";
+}
+.footer2 li:last-child:after {
+    content: "";
+}
+.footer3 li {
+    display: block;
+    color: #3f3948;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 15px 0 40px 0;
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+*,*:before, *:after {
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+   color: #666;
+}
+
+h1.lg {
+   text-align: center;
+   margin: 2rem 0;
+}
+#main_image {
+   width: 100%;
+}
+#main_image img {
+   width: 100%;
+}
+
+p.text {
+   width: 80%;
+   margin: 0 auto;
+   padding: 2rem 0;
+   text-align: center;
+}

@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap'); /* 로고글씨 */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    display: block;
+}
+.f {
+    font-family: 'Lato', sans-serif;
+}
+.f2 {
+    font-family: 'Pretendard-Regular';
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: fixed; top: 0;
+    background: #fefce9;
+    z-index: 10000;
+}
+header h1 {
+    text-align: center;
+    width: 250px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+}
+header h1 > a {
+    color: #ca2723;
+    font-family: 'Heebo', sans-serif;
+}
+.icon {
+    position: absolute; right: 0; top: 0;
+    padding: 0 15px;
+}
+.icon li {
+    display: inline-block;
+}
+.ham {
+    position: absolute; left: 0; top: 0;
+    padding: 7px 15px 0;
+}
+.a img {
+    width: 30px;
+}
+.im img {
+    margin-top: 9px;
+    width: 30px;
+}
+.icon_s {
+    position:absolute; top: 60px; right: 65px;
+    cursor: pointer;
+}
+.icon_s img {
+    width: 20px;
+    height: 20px;
+}
+.search_form input {
+    width: 210px;
+    border: none;
+    border-bottom: 3px solid #ca2723;
+    background: none;
+    outline: none;
+    margin: 78px 0 0 30px;
+}
+.menu {
+    z-index: 10000;
+    font-size: 1rem;
+    height: 100%;
+    background: #fff;
+    position: fixed; top: 0;
+    width: 300px;
+    /* left: 0; */
+    left: -300px; /* 일단 보이게 하려면 주석 풀기 */
+}
+.menu > ul {
+    margin: 20px;
+    height: 100%;
+}
+.menu li {
+    text-indent: 10px;
+}
+.menu > ul > li > a {
+    color: #3f3948;
+    font-weight: bold;
+    position: relative;
+}
+.dd {
+    margin: 15px 0 -15px;
+}
+.sub {
+    margin: 5px 0 0 20px;
+    display: none;
+}
+.sub li a {
+    display: block;
+    color: #3f3948;
+}
+.btn {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    position: absolute; right: -39px; top: 20px;
+    /* left: -39px; */
+}
+.cross {
+    width: 40px;
+    height: 40px;
+    background: none;
+    position: absolute; right:0; top:-5px;
+    color:#ca2723;
+    border:0;
+    cursor: pointer;
+    outline:none;
+    z-index:100000;
+    font-size: 4rem;
+}
+.arrow {
+    width: 15px;
+    position: absolute; right: 15px; top: 17px;
+}
+/* 헤더, 메뉴 */
+
+.black {
+    color: #3f3948;
+}
+.red {
+    color: #ca2723;
+}
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 6.5rem 0 3rem 0;
+    color: #3f3948;
+}
+.line {
+    width: 35px;
+    height: 3px;
+    background: #3f3948;
+    margin: -30px auto;
+}
+
+.s_list {
+    width: 100%;
+    position: relative; top: 50px;
+    text-align: center;
+}
+.s_list li {
+    font-size: 0.75rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    display: inline-block;
+}
+.s_list li:nth-child(4) {
+    font-weight: bold;
+}
+.s_list li a {
+    color: #3f3948;
+}
+
+.article1 {
+    width: 100%;
+}
+.article1 ul li {
+    width: 50%;
+    float: left;
+    margin-top: 25px;
+}
+.article1 ul li img {
+    width: 100%;
+}
+
+.mimg {
+    position: relative; left: 0; top: 60px;
+}
+.mimg a {
+    display: block;
+    font-size: 0.65rem;
+    color: #ca2723;
+    width: 95%;
+    margin: 0 auto;
+}
+span {
+    display: inline-block;
+    color: #3f3948;
+}
+.span {
+    margin-top: 10px;
+}
+.left {
+    margin-top: 10px;
+} /* 할인제품 */
+.span1 {
+    color: #b5b5b5;
+    margin-right: 8px;
+} /* 할인제품 */
+.left2 {
+    margin-top: 10px;
+} /* 기본제품 */
+
+.a_list {
+    width: 100%;
+}
+.aa_list {
+    position: relative; top: 100px;
+}
+.a_list ul {
+    display: flex;
+    justify-content: center;
+}
+.a_list ul li {
+    margin: 0 7px;
+}
+.a_list ul li:first-child {
+    font-weight: bold;
+}
+.a_list ul li a {
+    color: #3f3948;
+}
+
+.hover13:hover {
+    opacity: 0.7;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 150px 0 30px;
+}
+footer ul li {
+    display: inline-block;
+}
+.footer li a {
+    display: block;
+    color: #3f3948;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+.footer2 li {
+    display: inline-block;
+    color: #3f3948;
+    font-size: 0.7rem;
+}
+.footer2 li:after {
+    content: "|";
+    padding-left: 5px;
+    color: #3f3948;
+}
+.footer2 li:nth-child(4):after {
+    content: "";
+}
+.footer2 li:last-child:after {
+    content: "";
+}
+.footer3 li {
+    display: block;
+    color: #3f3948;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 15px 0 40px 0;
+}
