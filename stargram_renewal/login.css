@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #fafafa;
+    width: 100%;
+    
+}
+#container_wrap {
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+.container {
+    background: #fff;
+    width: 350px;
+    height: 380px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 0.8rem;
+}
+.logo-img {
+    display: block;
+    width: 13rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+form {
+    margin-top: 2rem;
+}
+input {
+    display: block;
+    width: 260px;
+    height: 40px;
+    margin: 0 auto;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    text-indent: 10px;
+
+    outline-color: lightgray;
+}
+button {
+    display: block;
+    width: 260px;
+    height: 30px;
+    margin: 0 auto;
+    outline: none;
+    border: skyblue;
+    background: skyblue;
+    border-radius: 5px;
+    opacity: 0.5;
+    font-weight: bold;
+    color: #fff;
+}
+input:first-child {
+    margin-bottom: 0.5rem;
+}
+input:nth-child(2) {
+    margin-bottom: 1rem;
+}
+
+.or-line {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto 0;
+    justify-content: center;
+}
+.line {
+    border-top: 2px solid lightgray;
+    width: 6rem;
+}
+.text {
+    margin: 0 15px;
+    font-weight: bold;
+    color: gray;
+}
+.find-pw {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.find-pw a {
+    color: #222;
+}
+
+
+
+
+
+
+
+.account {
+    background: #fff;
+    width: 350px;
+    height: 80px;
+    border: 1px solid #dbdbdb;
+}
