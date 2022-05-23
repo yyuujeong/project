@@ -13,11 +13,13 @@
             <header>
                 <img class="logo-img" src="img/insta.png" alt="logo">
             </header>
+
             <form name="login" action="info.php" method="post">
-                <input type="text" placeholder="전화번호 사용자 이름 또는 이메일">
-                <input type="password" placeholder="비밀번호">
-                <button>로그인</button>
+                <input id="id" type="text" onkeyup="loginBtn()" placeholder="전화번호 사용자 이름 또는 이메일">
+                <input id="pw" type="password" onkeyup="loginBtn()" placeholder="비밀번호">
+                <button id="btn">로그인</button>
             </form>
+
             <div class="or-line">
                 <div class="line"></div>
                 <div class="text">또는</div>
@@ -26,8 +28,6 @@
             <ul class="find-pw">
                 <li><a href="#">비밀번호를 잊으셨나요?</a></li>
             </ul>
-            
-
         </div>
 
         <div class="account">
@@ -37,6 +37,7 @@
             </ul>
         </div>
     </div>
-    
+
+    <script src="login.js"></script>
 </body>
 </html>
