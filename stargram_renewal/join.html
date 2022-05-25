@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+    <link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+    <div id="container_wrap">
+        <div class="container">
+            <header>
+                <img class="logo-img" src="img/insta.png" alt="logo">
+            </header>
+            <h3>친구들의 사진과 동영상을 보려면 가입하세요.</h3>
+
+            <div class="or-line">
+                <div class="line"></div>
+                <div class="text">또는</div>
+                <div class="line"></div>
+            </div>
+
+            <form name="login" action="info.php" method="post">
+                <input id="id" type="text" onkeyup="loginBtn()" placeholder="휴대폰 번호 또는 이메일 주소">
+                <input id="name" type="text" onkeyup="loginBtn()" placeholder="성명">
+                <input id="username" type="text" onkeyup="loginBtn()" placeholder="사용자 이름">
+                <input id="pw" type="password" onkeyup="loginBtn()" placeholder="비밀번호">
+                <button type="button" id="btn">가입</button>
+            </form>
+        </div>
+
+        <div class="account">
+            <ul>
+                <li>계정이 있으신가요?</li>
+                <li><a href="login.html">로그인</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
