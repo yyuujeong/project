@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>profile</title>
-    <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/animate.css">
 
 </head>
 <body>
@@ -45,7 +46,7 @@
                 <ul class="second-info">
                     <li>게시물</li>
                     <li>팔로워</li>
-                    <li><a href="#">팔로우</a></li>
+                    <li class="follow" onclick="onFollow()"><a href="#">팔로우</a></li>
                 </ul>
             </div>
     
@@ -53,11 +54,11 @@
     </div>
 
     <!-- 팔로우 모달 -->
-    <div id="modal"></div>
+    <div id="modal">
     <div class="modal-con modal1">
 		<p class="title">팔로잉</p>
         <ul class="modal-close">
-            <li><a href="javascript:;"><img src="img/close.png" alt="close"></a></li>
+            <li onclick="offFollow()"><a href="javascript:;"><img src="img/close.png" alt="close"></a></li>
         </ul>
         
 		<div class="category cf">
@@ -65,14 +66,64 @@
                 <li>카테고리</li>
             </ul>
             <div class="btn-plus">
-                <button><img src="img/plus.png" alt="plus"></button>
+                <button onclick="onBtn()"><img src="img/plus.png" alt="plus"></button>
             </div>
-            <form action="">
-                <input type="text">
-            </form>
+
+
+            <!-- 기존 카테고리 -->
+            <div class="cafe">
+                <!-- <a href="#"><img src="img/cat.jpg" alt=""></a>
+                <ul>
+                    <li><a href="#">카페<br><span>소제목</span></a></li>
+                </ul> -->
+                
+                <!-- <ul class="cf">
+                    <li><a href="#"><img src="img/cat.jpg" alt=""></a></li>
+                    <li><a href="#">카페</a></li>
+
+                </ul> -->
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/cat.jpg" alt=""><span>카페</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/cat.jpg" alt=""><span>정보</span>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+            
+            <!-- 추가 카테고리 -->
+            <div id="add-category">
+                <form action="">
+                    <input type="text" placeholder="이름">
+                    <button onsubmit="onSubmit()">추가</button>
+                </form>
+            </div>
+            <div class="line"></div>
+            
+
+
+
+
+
+            <!-- <ul>
+                <li><img src="" alt=""></li>
+                <li>큰제목</li>
+                <li>밑에설명</li>
+                <button>팔로잉</button>
+            </ul> -->
 		</div>
 	</div>
+    </div>
 
-    <script src="js/login.js"></script>
+    <script src="js/profile.js"></script>
 </body>
 </html>

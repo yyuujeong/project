@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+.animated {
+    animation-duration: .5s;
+}
+
+
+/* 아래에서 위로 */
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+@keyframes fadeInUp {
+    0% {opacity: 0;
+        transform: translateX(-50%), translateY(20px)}
+    100% {opacity: 1;
+        transform: translateX(0),translateY(0)}
+}
+
+.fadeInUpp {
+    animation-name: fadeInUpp;
+}
+@keyframes fadeInUpp {
+    0% {opacity: 0;
+        transform: translateY(10px)}
+    100% {opacity: 1;
+        transform: translateY(0)}
+}
+
+.fadeIn { 
+    animation-name: fadeIn;   
+}  
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.delay-05s {
+    animation-delay: 0.5s; /* 애니메이션 지연시간 (~초 있다가 나와라)*/
+}
+.delay-1s {
+    animation-delay: 1s;
+}
+
+/* 숨기는 css 시작*/
+.wp1, .wp2, .wp3, .wp4, .wp6, .wp7, .wp8 {
+    visibility: hidden; /* 자리는 그대로고 숨기는거, 일단 숨기고 시작 */
+}
+.fadeInUp, .fadeInUpp, .fadeInLeft, .fadeInOut, .fadeIn {
+    visibility: visible;  /* 애니메이션 나올때 보여야하니까(위랑 반대) */
+}
+/*  숨기는 css 종료*/
+
+
+/* 마우스 커서 효과 */
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}

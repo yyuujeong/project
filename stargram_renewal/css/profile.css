@@ -123,7 +123,7 @@ header {
 
 /* 팔로우 모달 */
 #modal {
-    /* display: none; */
+    display: none;
     position: fixed; 
     top: 0;
     left: 0; 
@@ -164,22 +164,90 @@ header {
 }
 
 .category {
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.3;
     padding: 30px;
 
 }
-.category ul {
+.category > ul {
     float: left;
     position: relative;
+}
+.category > ul li {
+    font-weight: bold;
 }
 .btn-plus button {
     background: none;
     border: none;
     cursor: pointer;
     position: absolute;
-    right: 0;
+    right: 2rem;
 }
 .btn-plus img {
     width: 1.5rem;
 }
+
+/* 기존 카테고리 */
+.cafe {
+    margin-top: 1.5rem;
+}
+.cafe ul {
+    margin-bottom: 1rem;
+}
+.cafe ul:first-child {
+    margin-top: 2.5rem;
+}
+.cafe img {
+    width: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+.cafe li span {
+    color: #000;
+}
+
+/* 추가 카테고리 */
+#add-category {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    min-height: 40%;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+}
+#add-category form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#add-category input {
+    width: 220px;
+    height: 35px;
+    background: rgb(236, 236, 236);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-indent: 15px;
+    margin-bottom: 1rem;
+}
+#add-category button {
+    display: block;
+    
+    padding: 2.5px 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.line {
+    border-bottom: 1px solid lightgray;
+}
+
