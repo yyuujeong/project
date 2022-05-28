@@ -55,23 +55,22 @@
 
     <!-- 팔로우 모달 -->
     <div id="modal">
-    <div class="modal-con modal1">
-		<p class="title">팔로잉</p>
-        <ul class="modal-close">
-            <li onclick="offFollow()"><a href="javascript:;"><img src="img/close.png" alt="close"></a></li>
-        </ul>
-        
-		<div class="category cf">
-			<ul>
-                <li>카테고리</li>
+        <div class="modal-con">
+            <p class="title">팔로잉</p>
+            <ul class="modal-close">
+                <li onclick="offFollow()"><a href="javascript:;"><img src="img/close2.png" alt="close"></a></li>
             </ul>
-            <div class="btn-plus">
-                <button onclick="onBtn()"><img src="img/plus.png" alt="plus"></button>
-            </div>
+        
+            <div class="category cf">
+                <ul>
+                    <li>카테고리</li>
+                </ul>
+                <div class="btn-plus">
+                    <button onclick="onBtn()"><img src="img/plus.png" alt="plus"></button>
+                </div>
 
-
-            <!-- 기존 카테고리 -->
-            <div class="cafe">
+                <!-- 기존 카테고리 -->
+                <div class="cafe">
                 <!-- <a href="#"><img src="img/cat.jpg" alt=""></a>
                 <ul>
                     <li><a href="#">카페<br><span>소제목</span></a></li>
@@ -83,31 +82,31 @@
 
                 </ul> -->
 
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="img/cat.jpg" alt=""><span>카페</span>
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="img/cat.jpg" alt=""><span>정보</span>
-                        </a>
-                    </li>
-                </ul>
-                
-            </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/cat.jpg" alt=""><span>카페</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="new-add"></ul>
+    
+                </div>
             
-            <!-- 추가 카테고리 -->
-            <div id="add-category">
-                <form action="">
-                    <input type="text" placeholder="이름">
-                    <button onsubmit="onSubmit()">추가</button>
-                </form>
-            </div>
-            <div class="line"></div>
+                <!-- 추가 카테고리 -->
+                <div id="add-category">
+                    <p>새로운 카테고리</p>
+                    <form action="" id="addForm">
+                        <input type="text" id="txtInput" placeholder="새 카테고리">
+                        <div class="btn-wrap">
+                            <button id="del-btn">취소</button>
+                            <button id="add-btn">추가</button>
+                        </div>
+
+                    </form>
+                </div>
+                
+                <div class="line"></div>
             
 
 
@@ -120,8 +119,8 @@
                 <li>밑에설명</li>
                 <button>팔로잉</button>
             </ul> -->
-		</div>
-	</div>
+            </div>
+        </div>
     </div>
 
     <script src="js/profile.js"></script>

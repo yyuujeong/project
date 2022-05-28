@@ -138,7 +138,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 35%;
+    width: 30%;
     min-height: 60%;
     background: #fff;
     border-radius: 10px;
@@ -222,6 +222,19 @@ header {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
 }
+#add-category p {
+    margin: 1.5rem 1rem;
+    font-size: 0.9rem;
+}
+#add-category .add-close {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 1rem;
+}
+#add-category .add-close img {
+    width: 1.5rem;
+}
 #add-category form {
     position: absolute;
     top: 50%;
@@ -236,16 +249,34 @@ header {
     border-radius: 5px;
     outline: none;
     text-indent: 15px;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
-#add-category button {
+/* #add-category .add-btn {
     display: block;
-    
+    background: none;
+    border: 1px solid lightgray;
     padding: 2.5px 10px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+} */
+.btn-wrap {
+    margin-top: 1rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-32%);
 }
+.btn-wrap button {
+    background: none;
+    border: 1px solid lightgray;
+    padding: 3px 15px;
+    
+    cursor: pointer;
+}
+.btn-wrap button:first-child {
+    margin-right: 1rem;
+}
+
 
 .line {
     border-bottom: 1px solid lightgray;

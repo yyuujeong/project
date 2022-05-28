@@ -49,10 +49,11 @@
 .wp1, .wp2, .wp3, .wp4, .wp6, .wp7, .wp8 {
     visibility: hidden; /* 자리는 그대로고 숨기는거, 일단 숨기고 시작 */
 }
-.fadeInUp, .fadeInUpp, .fadeInLeft, .fadeInOut, .fadeIn {
-    visibility: visible;  /* 애니메이션 나올때 보여야하니까(위랑 반대) */
-}
+/* .fadeInUp, .fadeInUpp, .fadeInLeft, .fadeInOut, .fadeIn {
+    visibility: visible; 
+} */
 /*  숨기는 css 종료*/
+/* 애니메이션 나올때 보여야하니까(위랑 반대) */
 
 
 /* 마우스 커서 효과 */
