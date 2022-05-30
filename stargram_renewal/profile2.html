@@ -38,7 +38,7 @@
             </div>
             <div class="info">
                 <ul class="first-info">
-                    <li>abcde</li>
+                    <li>abcd.efg</li>
                     <li><a href="#">프로필 편집</a></li>
                     <li><a href="#"><img src="img/setting.png" alt="톱니바퀴"></a></li>
                     
@@ -70,26 +70,25 @@
                 </div>
 
                 <!-- 기존 카테고리 -->
-                <div class="cafe">
+                <div class="existing-list">
                     <ul id="comments">
                         <li>
                             <a href="#">
-                                <img src="img/cat.jpg" alt=""><span>카페</span>
+                                <!-- <img src="img/dessert.jpg" alt="">--><span>카페</span> 
                             </a>
                         </li>
                     </ul>
-                    <ul id="new-add"></ul>
                 </div>
             
                 <!-- 추가 카테고리 -->
                 <div id="add-category">
                     <p>새로운 카테고리</p>
-                    <form action="" id="instaForm">
+                    <form action="" id="addForm">
                         <!-- <input type="text" name="username" placeholder="새 카테고리"> -->
-                        <input type="text" name="comment" placeholder="comment" />
+                        <input type="text" name="comment" placeholder="새 카테고리" />
                         <div class="btn-wrap">
                             <button onclick="delClick()">취소</button>
-                            <button>추가</button>
+                            <button onclick="addClick()">추가</button>
                         </div>
 
                     </form>
@@ -113,6 +112,6 @@
     </div>
 
     <script src="js/profile2.js"></script>
-    <script src="js/a.js"></script>
+    <!-- <script src="js/a.js"></script> -->
 </body>
 </html>

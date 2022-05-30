@@ -2,85 +2,70 @@
 const follow = document.getElementsByClassName('follow');
 const modal = document.getElementById('modal');
 
-function onFollow(e) {
+function onFollow() {
     modal.style.display = 'block';
 }
 function offFollow() {
     modal.style.display = 'none';
 }
 
-//추가 카테고리 
+//추가(plus) 카테고리 
+const addCategory = document.getElementById('add-category');
 function onBtn() {
-    //addCategory.style.display = 'block';
-    //addCategory.classList.add('animated', 'fadeInUp');
+  addCategory.style.display = 'block';
+}
 
-    // addCategory.animate([
-    //     { opacity: "0", transform: "translateX(-50%), translateY(20px)" },
-    //     { opacity: "1", transform: "translateX(0), translateY(0)" }
-    // ], {
-    //     duration: 200
-    // }); 
-
-    // addCategory.style.display = 'block';
-
-    // if(btnPlus.clicked == true) {
-    //     addCategory.classList.add('animated', 'fadeInUp');
-    // } else {
-    //     addCategory.classList.remove('animated', 'fadeInUp');
-    // }
-
-    let addCategory = document.getElementById('add-category');
-
-    if(addCategory.style.display = 'block') {
-        addCategory.classList.add('animated', 'fadeInUp');
-    } else {
-        addCategory.classList.remove('animated', 'fadeInUp');
-    }  
+//취소 버튼
+function delClick() {
+  addCategory.style.display = "none";
+  e.preventDefault();
 }
 
 //추가 버튼 클릭 시
-const instaForm = document.querySelector("#instaForm");
+const addForm = document.querySelector("#addForm");
 const commentsContainer = document.querySelector("#comments");
+const addInput = document.querySelector('#addForm > input');
 
-instaForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-//   const usernameInput = instaForm.elements.username;
-  const commentInput = instaForm.elements.comment;
-  addComment(commentInput.value);
-  commentInput.value = "";
-
+// addForm.addEventListener("submit", (e) => {
   
-
-  let emptyCheck = button.value.replace(/(\s*)/g, ''); //공백 삭제
-  let isEmpty = true;
-  emptyCheck == '' ? (isEmpty = true) : (isEmpty = false); 
-  //공백이 삭제된 값을 통해 공백만 입력한 경우에도 빈 문자열로 간주한다.
+//   const commentInput = addForm.elements.comment;
+//   addComment(commentInput.value);
+//   commentInput.value = "";
   
-  if (isEmpty === true) {
-    button.disabled = true;
-    submitBtnDeactivate();
+//   e.preventDefault();
+
+// });
+function addClick() {
+
+  if (addInput.value == '') {
+    alert('이름을 입력하세요');
   } else {
-    button.disabled = false;
-    submitBtnActivate();
+    const commentInput = addForm.elements.comment;
+    addComment(commentInput.value);
+    commentInput.value = "";
+  
+    e.preventDefault();
   }
+  return false;
 
 
-
-
-
-});
+  // const commentInput = addForm.elements.comment;
+  // addComment(commentInput.value);
+  // commentInput.value = "";
+  
+  // e.preventDefault();
+}
 
 const addComment = (comment) => {
   const newComment = document.createElement("li");
-  const bTag = document.createElement("img");
-  bTag.append(comment);
-  newComment.append(bTag);
+  //const imgTag = document.createElement("img");
+  //imgTag.append(comment);
+  //newComment.append(imgTag);
   newComment.append(`${comment}`);
   commentsContainer.append(newComment);
+
+
+
+
+  addCategory.style.display = "none";
 };
-
-
-const addCate = document.getElementById('add-category');
-function delClick() {
-    addCate.style.display = "none";
-}
