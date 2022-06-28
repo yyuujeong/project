@@ -44,10 +44,9 @@ function addClick() {
     addComment(commentInput.value);
     commentInput.value = "";
   
-    e.preventDefault();
+    // e.preventDefault();
+    return false;
   }
-  return false;
-
 
   // const commentInput = addForm.elements.comment;
   // addComment(commentInput.value);
@@ -62,10 +61,8 @@ const addComment = (comment) => {
   //imgTag.append(comment);
   //newComment.append(imgTag);
   newComment.append(`${comment}`);
+  newComment.style.marginTop = '5px';
   commentsContainer.append(newComment);
-
-
-
 
   addCategory.style.display = "none";
 };

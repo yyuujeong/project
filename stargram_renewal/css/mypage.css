@@ -278,3 +278,22 @@ header {
     border-bottom: 1px solid lightgray;
 }
 
+/* 게시글 */
+#post {
+    margin: 2rem auto;
+    width: 75%;
+}
+#post ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#post li {
+    background: greenyellow;
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+
+
