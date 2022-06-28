@@ -288,12 +288,12 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#post li {
-    background: greenyellow;
+#post li img {
     width: 20rem;
     height: 20rem;
     margin-bottom: 2rem;
 }
+
 
 
 
